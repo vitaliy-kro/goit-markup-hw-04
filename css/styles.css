@@ -109,10 +109,32 @@ body {
 .auth-link .item + .item {
   margin-left: 50px;
 }
+.auth-link .item {
+  display: flex;
+  align-items: center;
+}
+.auth-link .item::before {
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.header-mail::before {
+  width: 16px;
+  height: 12px;
+  background-image: url('../images/envelope.svg');
+}
+.header-tel::before {
+  width: 10px;
+  height: 16px;
+  background-image: url('../images/Vector.svg');
+}
+
 .auth-link .link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+  margin-left: 10px;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -126,7 +148,16 @@ body {
 }
 /* Герой */
 .hero {
+  background-image: url('../images/hero-background.jpg');
+  height: 600px;
+  max-width: 1600px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--hero-footer-background);
+
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
