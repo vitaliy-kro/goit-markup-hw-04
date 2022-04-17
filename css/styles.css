@@ -16,6 +16,7 @@
   --workers-card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --products-cards-border-color: #eeeeee;
+  --background-hero-gradient: rgba(47, 48, 58, 0.4);
 }
 body {
   color: var(--primary-text-color);
@@ -148,14 +149,17 @@ body {
 }
 /* Герой */
 .hero {
-  background-image: url('../images/hero-background.jpg');
+  background-image: linear-gradient(
+      to right,
+      var(--background-hero-gradient),
+      var(--background-hero-gradient)
+    ),
+    url('../images/hero-background.jpg');
   height: 600px;
   max-width: 1600px;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
   background-color: var(--hero-footer-background);
 
   text-align: center;
@@ -201,7 +205,29 @@ body {
 .preferences {
   display: flex;
 }
-.preferences .item {
+.preferences .item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.item.antenna::before {
+  background-image: url(../images/antenna.svg);
+}
+.item.clock::before {
+  background-image: url(../images/clock.svg);
+}
+.item.diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+.item.astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+. .preferences .item {
   width: 270px;
 }
 .preferences .item + .item {
