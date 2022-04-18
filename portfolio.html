@@ -27,16 +27,26 @@
         <nav class="navigation">
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+            <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
         <ul class="auth-link top list">
           <li class="item">
-            <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+            <a href="mailto:info@devstudio.com" class="link">
+              <svg class="icon" width="16" height="12">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
           </li>
           <li class="item">
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link">
+              <svg class="icon" width="10" height="16">
+                <use href="./images/sprite.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -169,19 +179,54 @@
     </main>
     <!-- Футер  -->
     <footer class="footer">
-      <div class="container">
-        <a lang="en" href="./index.html" class="logo web footer"
-          >Web<span class="logo white">Studio</span></a
-        >
-        <address>
-          <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
-          <ul class="auth-link list">
-            <li class="footer-mail">
-              <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+      <div class="container footer-content">
+        <div class="footer-adresses">
+          <a lang="en" href="./index.html" class="logo web footer"
+            >Web<span class="logo white">Studio</span></a
+          >
+          <address class="footer-adress">
+            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="auth-link list">
+              <li class="footer-mail">
+                <a href="mailto:info@devstudio.com" class="footer-link">info@devstudio.com</a>
+              </li>
+              <li><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-media">
+          <h3 class="footer-media-text">Присоединяйтесь</h3>
+          <ul class="social list">
+            <li class="item">
+              <a class="social-media-icons icons-footer" href="https://.com">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li><a href="tel:+380961111111" class="footer-link">+38 096 111 11 11</a></li>
+            <li class="item">
+              <a class="social-media-icons icons-footer" href="https://.com">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="social-media-icons icons-footer" href="https://.com">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="item">
+              <a class="social-media-icons icons-footer" href="https://.com">
+                <svg class="icon" width="20" height="20">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>
