@@ -279,6 +279,8 @@ body {
 .workers-text {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .workers-name {
   margin-bottom: 10px;
@@ -302,8 +304,6 @@ body {
 
   width: 206px;
   height: 44px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .social-media .item {
   display: flex;
@@ -378,6 +378,7 @@ body {
 /* Футер */
 .footer-content {
   display: flex;
+  align-items: baseline;
 }
 .footer {
   background-color: var(--hero-footer-background);
@@ -498,7 +499,6 @@ body {
 }
 .card:hover, .card:focus {
   box-shadow: var(--hover-card-shadow);
-  cursor: pointer;
 }
 .products-cards {
   display: flex;
